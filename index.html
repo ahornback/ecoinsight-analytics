@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoInsight Analytics | Indiana PM2.5</title>
+    <meta name="description" content="Environmental monitoring and forecasting platform for PM2.5 air pollution at selected Indiana monitoring stations." />
+    <meta property="og:title" content="EcoInsight Analytics | Indiana PM2.5" />
+    <meta property="og:description" content="Environmental monitoring and forecasting platform for PM2.5 air pollution at selected Indiana monitoring stations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Ignore HMR WebSocket errors per AI Studio environment constraints
+      window.addEventListener('error', function(e) {
+        if (
+          e.message && (
+            e.message.indexOf('WebSocket') !== -1 ||
+            e.message.indexOf('createWebSocketModuleRunnerTransport') !== -1 ||
+            e.filename && e.filename.indexOf('@vite/client') !== -1
+          )
+        ) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(e) {
+        var str = String(e.reason || '');
+        var stack = String(e.reason && e.reason.stack || '');
+        if (
+          str.indexOf('WebSocket') !== -1 ||
+          str.indexOf('createWebSocketModuleRunnerTransport') !== -1 ||
+          stack.indexOf('@vite/client') !== -1
+        ) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

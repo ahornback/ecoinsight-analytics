@@ -1,0 +1,6 @@
+{
+  "name": "EcoInsight Analytics | Indiana PM2.5",
+  "description": "Environmental monitoring and forecasting platform for PM2.5 air pollution at selected Indiana monitoring stations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
