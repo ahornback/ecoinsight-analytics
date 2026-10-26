@@ -1,0 +1,30 @@
+# Installed and compiled inside the image.
+node_modules
+dist
+dist-server
+
+# Environment files. JWT_SECRET is injected when the container starts.
+.env
+.env.*
+
+# Credentials and keys.
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+credentials.json
+.aws
+
+# Temporary local accounts. The running container creates this file itself.
+server/data/users.json
+
+# Local editor, agent, and VCS files.
+.git
+.cursor
+.agents
+coverage
+*.log
+.DS_Store
+skills-lock.json
+npm-debug.log*
